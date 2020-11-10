@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+    python:
+        build:
+            context: .
+            dockerfile: 'Dockerfile'
+        image: ${TAG}
+        hostname: ${TAG}
+        container_name: ${TAG}
+        ports:
+            - '8888:8888'
+        volumes:
+            - $PWD/lab/jupyter:/opt/python/jupyter
+            - $PWD/lab/jupyterlab:/opt/python/jupyterlab
+            - $PWD/lab/library:/opt/python/library
+        tty: true
