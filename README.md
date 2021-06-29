@@ -1,13 +1,14 @@
 # jup_light
-2020-11-10
 
-image : python:3.8.6-slim
+2021-06-29
+
+image : python:3.9.5-slim
 
 ## requirements
 
-jupyterlab==2.2.9<br>
-matplotlib==3.3.2<br>
-numpy==1.19.4<br>
-pandas==1.1.4<br>
-seaborn==0.11.0<br>
-bokeh==2.2.3<br>
+jupyterlab==3.0.16<br>
+matplotlib==3.4.2<br>
+numpy==1.21.0<br>
+pandas==1.2.5<br>
+seaborn==0.11.1<br>
+bokeh==2.3.2<br>
